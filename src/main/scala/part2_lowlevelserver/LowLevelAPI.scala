@@ -9,8 +9,11 @@ import akka.http.scaladsl.model.{ContentTypes, HttpEntity, HttpMethod, HttpMetho
 import akka.http.scaladsl.server.ContentNegotiator.Alternative.ContentType
 import part2_lowlevelserver.LowLevelAPI_Practice.asyncFlowHandler
 
+
 import scala.concurrent.Future
 import scala.util.{Failure, Success}
+
+import akka.http.scaladsl.server.Directives._
 
 object LowLevelAPI extends App {
 
@@ -119,6 +122,10 @@ object LowLevelAPI extends App {
 
   //shorthand version
   Http().bindAndHandleAsync(asyncRequestHandler,"localhost",8081)
+
+//  val route = path("")
+//
+//  Http().bindAndHandle(route,"localhost",8080)
 
   /*
   Method 3: async via Akka streams

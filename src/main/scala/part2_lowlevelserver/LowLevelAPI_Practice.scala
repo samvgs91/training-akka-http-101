@@ -76,8 +76,8 @@ object LowLevelAPI_Practice extends App{
   }
   // we can shut down an httpserver:
 
-  val bindingFuture = Http().bindAndHandle(asyncFlowHandler,"localhost",8388)
-
-  bindingFuture.flatMap(binding => binding.unbind()).onComplete(_=> system.terminate())
+//  val bindingFuture = Http().bindAndHandle(asyncFlowHandler,"localhost",8388)
+//
+//  bindingFuture.flatMap(binding => binding.unbind()).onComplete(_=> system.terminate())
 
 }
