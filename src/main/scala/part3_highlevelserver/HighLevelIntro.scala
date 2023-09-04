@@ -30,6 +30,19 @@ object HighLevelIntro extends App{
       }
     }
 
+//  Note #1:
+//    Directives:
+//  - are several ones
+//  - can path and complete response.
+//    - the result of directives of an error.
+//
+//  Rote type can be implicitly convert to a Flow
+//
+//  Note #2:
+//    Directives has defaults behaviours.
+
+
+
   // chaining directives with ~ -> chain character
   // you can chain other directives
   // ~ = otherwise
